@@ -1,23 +1,75 @@
+[update-readmes]   Mode: rewrite — migrating to template structure...
 # droidcam2v4l2
 
-Daemon that bridges Android cameras to V4L2, using droidmedia and v4l2loopback.
+[![Built with Ona](https://ona.com/build-with-ona.svg)](https://app.ona.com/#https://github.com/Interested-Deving-1896/droidcam2v4l2)
 
-## Build dependencies
+<!-- AI:start:what-it-does -->
+_Description pending._
+<!-- AI:end:what-it-does -->
 
-- libdroidmedia-dev
-- libyuv-dev (if rotation support is enabled)
-- libglib2.0-dev
-- pkgconf
+## Architecture
 
-## Runtime dependencies
+<!-- AI:start:architecture -->
+_Architecture documentation pending._
+<!-- AI:end:architecture -->
 
-- v4l2loopback (kernel driver)
-- libyuv0
-- libglib2.0-0
+## Install
 
-## Build
+<!-- Add installation instructions here. This section is yours — the AI will not modify it. -->
+
+```bash
+git clone https://github.com/Interested-Deving-1896/droidcam2v4l2.git
+cd droidcam2v4l2
 ```
-gcc `pkg-config --cflags gio-2.0` -DSUPPORT_ROTATION=1 -o droidcam2v4l2 src/droidcam2v4l2.c `pkg-config --libs gio-2.0` -ldroidmedia -lyuv
+
+## Usage
+
+<!-- Add usage examples here. This section is yours — the AI will not modify it. -->
+
+## Configuration
+
+<!-- Document configuration options here. This section is yours — the AI will not modify it. -->
+
+## CI
+
+<!-- AI:start:ci -->
+_CI documentation pending._
+<!-- AI:end:ci -->
+
+## Mirror chain
+
+<!-- AI:start:mirror-chain -->
+This repo is maintained in [`Interested-Deving-1896/droidcam2v4l2`](https://github.com/Interested-Deving-1896/droidcam2v4l2) and mirrored through:
+
+```
+Interested-Deving-1896/droidcam2v4l2  ──►  OpenOS-Project-OSP/droidcam2v4l2  ──►  OpenOS-Project-Ecosystem-OOC/droidcam2v4l2
 ```
 
-If you can't (or don't want to) use libyuv, you can set `SUPPORT_ROTATION` to 0.
+Changes flow downstream automatically via the hourly mirror chain in
+[`fork-sync-all`](https://github.com/Interested-Deving-1896/fork-sync-all).
+Direct commits to OSP or OOC are detected and opened as PRs back to `Interested-Deving-1896`.
+<!-- AI:end:mirror-chain -->
+
+## Contributors
+
+<!-- AI:start:contributors -->
+_Contributors pending._
+<!-- AI:end:contributors -->
+
+## Origins
+
+<!-- AI:start:origins -->
+_Original project — no upstream fork._
+<!-- AI:end:origins -->
+
+## Resources
+
+<!-- AI:start:resources -->
+_No additional resource files found._
+<!-- AI:end:resources -->
+
+## License
+
+<!-- AI:start:license -->
+[MIT](https://github.com/Interested-Deving-1896/droidcam2v4l2/blob/forky/LICENSE) © 2026 [Interested-Deving-1896](https://github.com/Interested-Deving-1896)
+<!-- AI:end:license -->
